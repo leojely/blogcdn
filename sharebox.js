@@ -3,7 +3,7 @@ document.addEventListener('mouseup', onMouseUp);
 var temp = document.querySelector('#shareBoxTemplate');
 
 function onMouseDown() {
-	document.getSelection().removeAllRanges();
+	var shareBtn = shareBox.querySelector('button');
 	var shareBox = document.querySelector('#shareBox');
 	if (shareBox !== null)
 		shareBox.remove();
